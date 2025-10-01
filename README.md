@@ -1,6 +1,6 @@
-# Genie-lab# Genie Diagnostics - Pathology Lab Software
+# Genie-lab# Genie Diagnostics - Lab Software
 
-A comprehensive cloud-based Laboratory Information Management System (LIMS) designed for pathology labs and diagnostic centers.
+A comprehensive cloud-based Laboratory Information Management System (LIMS) designed for labs and diagnostic centers.
 
 ## 🚀 Features
 

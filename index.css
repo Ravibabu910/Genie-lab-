@@ -1145,7 +1145,8 @@ p {
 .hero {
   padding: 120px 0 80px;
   background: linear-gradient(135deg, var(--color-bg-1) 0%, var(--color-bg-8) 100%);
-  position: relative;
+  position: center;
+  size-adjust: 70px;
   overflow: hidden;
 }
 
@@ -1168,17 +1169,75 @@ p {
   z-index: 2;
 }
 
-.hero-logo {
-  margin-bottom: var(--space-32);
+.hero-logo img {
+    width: 250px;                  
+    height: auto;                   
+    max-width: 100%;              
 }
 
-.hero-logo-icon {
-  position: relative;
-  font-size: 80px;
-  color: var(--color-primary);
-  margin-bottom: var(--space-16);
-  display: inline-block;
+.hero-content img {
+    width: 200px;                  
+    height: auto;
+    display: block;
+    margin: 0 auto;                
 }
+
+.hero-logo-section {
+    text-align: center;
+}
+
+.hero-logo-section img {
+    width: 180px;                  
+    height: auto;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero-logo img,
+    .hero-content img,
+    .hero-logo-section img {
+        width: 150px;              
+    }
+}
+
+
+.logo-circle {
+    width: 40px;              
+    height: 40px;
+    border-radius: 50%; 
+    overflow: hidden;         
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;  
+}
+
+.logo-circle {
+    width: 50px;                   
+    height: 50px;
+    border-radius: 50%;            
+    overflow: hidden;               
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f0f0f0, #ffffff); 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);                
+    border: 2px solid rgba(255,255,255,0.8);               
+    transition: transform 0.3s ease;                        
+}
+
+.logo-circle:hover {
+    transform: scale(1.05);         /* Slight zoom on hover */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.logo-circle img {
+    width: 85%;                     
+    height: 85%;
+    object-fit: cover;              
+    border-radius: 50%;           
+}
+
 
 .hero-logo-drop {
   position: absolute;
@@ -1193,6 +1252,7 @@ p {
   font-weight: var(--font-weight-bold);
   background: linear-gradient(135deg, var(--color-primary), var(--color-red-500));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 0;
 }

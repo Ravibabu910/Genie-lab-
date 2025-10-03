@@ -1,12 +1,12 @@
-# Genie Diagnostics Website Files
+# Apple Health AmazeWebsite Files
 
-This package contains all the source code files for the Genie Diagnostics lab management software website.
+This package contains all the source code files for the Apple Health Amazelab management software website.
 
 ## Files Included:
 
 ### 1. index.html
 The main HTML file containing the complete website structure including:
-- Navigation header with Genie Diagnostics logo
+- Navigation header with Apple Health Amazelogo
 - Hero section with key statistics and call-to-action
 - Features section showcasing lab software capabilities
 - Pricing plans (Basic ₹599, Standard ₹749, Advanced ₹999)
